@@ -4,31 +4,45 @@
 // ' </li></ul>  </section>  ';
 // document.getElementById("content").style.backgroundImage =' "background.jpg" 
 
-$( "#content" ).append( '<section id="header">'+
-' <ul id="navbar"><li><button class="buttonhome" l">Home</button></li><li><button class="1" ">main foods for today</button></li>'+
+$("#content" ).append( '<section id="header">'+
+' <ul id="navbar"><li><button class="buttonhome" l">Home</button></li><li><button class="button1" ">main foods for today</button></li>'+
 ' <li><button  class="button2">Blog</button></li> <li><button  class=""button3>About</button></li>  <li><button class="button4">Contect</button></li> <li>  <button class="button5" >Job Offers   </button>'+
 ' </li></ul>  </section> ' );   $('.imgEl').css('background-image', 'url(./assets/image.png)');
 $('body').css('background-image', 'url(./background.jpg)');
+$('body').css('background-image', 'url(./img/background.jpg)'); 
 // $("#content").append("<h2>Welcome to our company! We're so excited to have <br>you as part of our team <br> We're glad "+
 // "you've chosen us,<br> and we want to show our appreciation by<br> giving you a special incentive.</h2>");
 $('.buttonhome').on('click',function(){
     $('body').css('background-image', 'url(./img/background.jpg)'); 
-    $("#content").append("<h2></h2 >Welcome to our company! We're so excited to have you as part of our team <br> We're glad "+
+    $("#content").append("<h2 class='homepage'>Welcome to our company! We're so excited to have you as part of our team <br> We're glad "+
     "you've chosen us,<br> and we want to show our appreciation by giving you a special incentive.</h2>");
 })
-$('.button2').on('click',function(){
+
+$('.button1').on('click',function(){
+    $("h2").hide();
     $('body').css('background-image', 'url(./img/1.jpg)'); 
-    $("#content").append("<h2></h2 >Welcome to our company! We're so excited to have you as part of our team <br> We're glad "+
-    "you've chosen us,<br> and we want to show our appreciation by giving you a special incentive.</h2>");
+    $("#content").append("");
 })
 $('.button2').on('click',function(){
+    $("h2").hide();
     $('body').css('background-image', 'url(./img/2.jpg)'); 
-    $("#content").append("<h2></h2 >Welcome to our company! We're so excited to have you as part of our team <br> We're glad "+
-    "you've chosen us,<br> and we want to show our appreciation by giving you a special incentive.</h2>");
+    $("#content").append("");
 })
 $('.button3').on('click',function(){
+    $("h2").hide();
     $('body').css('background-image', 'url(./img/3.jpg)'); 
-    $("#content").append("<h2></h2 >Welcome to our company! We're so excited to have you as part of our team <br> We're glad "+
-    "you've chosen us,<br> and we want to show our appreciation by giving you a special incentive.</h2>");
+    $("#content").append("");
 })
+$('.button4').on('click',function(){
+    $("h2").hide();
+    $('body').css('background-image', 'url(./img/4.jpg)'); 
+    $("#content").append("");
+})
+$('.button5').on('click',function(){
+    $("h2").hide();
+    $('body').css('background-image', 'url(./img/5.jpg)'); 
+    $("#content").append("");
+})
+
+
 
